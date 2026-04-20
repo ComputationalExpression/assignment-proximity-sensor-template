@@ -1,6 +1,6 @@
-# Title
+# Going the Distance
 
-![Image]()
+![Image](https://raw.githubusercontent.com/ComputationalExpression/assignment-proximity-sensor-template/refs/heads/media/media/100%20-%20Distance.png)
 
 |Date |       |
 |:----|:------|
@@ -29,7 +29,7 @@ This assignment addresses the following course learning objective(s):
 > [!NOTE]
 > This assignment does not require LEDs.
 
-![]()
+![](https://raw.githubusercontent.com/ComputationalExpression/assignment-proximity-sensor-template/refs/heads/media/media/100%20-%20Pico%20(Ultrasonic)_bb.png)
 
 The above graphic is a `pinout diagram`: a description of how to wire a _physical computing_ project. Match the above diagram with the following components:
 
