@@ -1,6 +1,6 @@
 # Going the Distance
 
-![Image]()
+![Image](https://raw.githubusercontent.com/ComputationalExpression/assignment-proximity-sensor-template/refs/heads/media/media/100%20-%20Distance.png)
 
 |Date |       |
 |:----|:------|
