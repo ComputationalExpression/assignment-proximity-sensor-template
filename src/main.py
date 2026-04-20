@@ -19,26 +19,16 @@ def connect():
     #print(f"Connected to: {env['SSID']}")
 
 def send_measure(measurement: float):
-    response = requests.post(
-        "https://dev.chompe.rs/submit-measure",
-        json={
-            "value": measurement
-        }
-    ).text
-    return json.loads(response)
+    """
+        Recieves measurement and sends to verification API: https://dev.chompe.rs/submit-measure
+        using one parameter: value (the distance in feet)
+    """
 
 def main():
     # Connect to internet network
     connect()
-    btn = Pin(15, Pin.IN, Pin.PULL_UP)
-    sensor = ProxSensor()
-    while True:
-        if btn.value() == 0:
-            distance = sensor.pulse(times = 3)
-            break
-    units = Measurements(distance)
-    print(units)
-    send_measure(measurement = units.feet)
+    # Create btn at Pin 15, when pressed take a reading from the sensor object,
+    # and pass to Measurements to get measurements.
 
 if __name__ == "__main__":
     main()
