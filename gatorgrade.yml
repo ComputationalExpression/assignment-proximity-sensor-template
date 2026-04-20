@@ -1,0 +1,4 @@
+- description: "TODO: Write more checks"
+  check: ExecuteCommand
+  options:
+    command: ls
