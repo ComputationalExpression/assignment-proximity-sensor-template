@@ -5,16 +5,13 @@ class Measurements:
         self.meters = self.__distance_in_meters(reading)
 
     def __distance_in_feet(self, reading: float) -> float:
-        cm = self.__distance_in_cm(reading)
-        if (cm <= 0):
-            return 0
-        return (cm / 2.54) / 12
+        """ Takes a reading and returns the distance in feet """
 
     def __distance_in_meters(self, reading: float) -> float:
-        return self.__distance_in_cm(reading) / 100
+        """ Takes a reading and returns the distance in meters """
 
     def __distance_in_cm(self, reading: float) -> float:
-        return (reading / 2) / 29.1
+        """ Uses formula in README to convert a reading to centimeters """
     
     def __str__(self):
         return f"""Object is:
